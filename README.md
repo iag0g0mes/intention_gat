@@ -3,7 +3,7 @@
 Created by Iago Pachêco Gomes at USP - ICMC, University of São Paulo - Institute of Mathematics and Computer Science
 
 
-**(waiting for the result of the submission to 2013 IEEE Intelligent Vehicles Symposium (IV))**
+**(waiting for the result of the submission to 2023 IEEE Intelligent Vehicles Symposium (IV))**
 
 ## Introduction
 
