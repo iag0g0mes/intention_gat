@@ -5,7 +5,7 @@ Created by Iago Pachêco Gomes at USP - ICMC, University of São Paulo - Institu
 
 **(published in 2023 IEEE Intelligent Vehicles Symposium (IV))**
 
-**This repository will be updated by July 10th.**
+### **This repository will be updated by July 10th.**
 
 ## Introduction
 
