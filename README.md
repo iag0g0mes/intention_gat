@@ -17,6 +17,11 @@ This repository contains the implementation of the models proposed and evaluated
 
 Intention prediction is an important task for an autonomous vehicle's perception system. It gives the likelihood of a target vehicle performing a maneuver belonging to a finite set of possibilities.  There are many factors that influence the decision-making process of a driver, which should be considered in a prediction framework. In addition, the lack of labeled large-scale dataset with maneuver intention annotation  imposes another challenge to the research field. In this sense, this paper proposes an Interaction-aware Maneuver Intention Prediction framework using interaction graphs to extract complex interaction features from traffic scenes. In addition, we explored a Semi-Supervised approach called Noisy Student to take advance of unlabeled data in the training step. Finally, the results show relevant improvement while using unlabeled data that improved the framework performance.
 
+
+## System Architecture
+
+
+
 ## License
 
 Apache License 2.0
