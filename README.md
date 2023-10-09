@@ -51,6 +51,27 @@ Apache License 2.0
 ### Features
 
 #### Dataset
+##### Extract Features
+1) activate the environment and move to the feature folder
+   
+```shell
+conda activate argo
+cd features/argoverse
+```
+
+2) Modify the file cfg/features.ini according to instructions and the example
+3) You have to run this code one time for the validation dataset and another for the training dataset
+
+```python
+python argoverse_features.py --cfg cfg/features.ini
+```
+
+4) Split the validation dataset into train_with_labels / validation / testing
+4.1) Modify the file cfg/split_dataset.ini according to instructions and the example
+
+```python
+python split_features.py --cfg cfg/split_dataset.ini
+```
 
 
 ### Training and Testing
