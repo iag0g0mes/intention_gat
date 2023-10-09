@@ -20,7 +20,9 @@ Intention prediction is an important task for an autonomous vehicle's perception
 
 ## System Architecture
 
+![Alt System Architecture](/image/model.png)
 
+This architecture relies on an encoder-decoder setup, where motion, road geometry, and interaction features are extracted from the interaction graph and a High-Definition Map (HD-Map). A Bidirectional-LSTM combines all features, and two decoders with Fully-Connected (FC) layers and Multi-Head Attention Mechanism (MHAM) estimate the lateral and longitudinal maneuver intentions. 
 
 ## License
 
