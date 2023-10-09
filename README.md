@@ -5,8 +5,6 @@ Created by Iago Pachêco Gomes at USP - ICMC, University of São Paulo - Institu
 
 **(published in 2023 IEEE Intelligent Vehicles Symposium (IV))**
 
-### **This repository will be updated by July 30th.**
-
 ## Introduction
 
 This repository contains the implementation of the models proposed and evaluated in the article "Interaction-aware Maneuver Intention Prediction for Autonomous Vehicles using Interaction Graphs". In addition, it also provides the lateral and longitudinal maneuver intention labels for the Argoverse v.1 validation dataset.
@@ -30,11 +28,15 @@ Apache License 2.0
 
 ## Citation
 ``` 
-@article{gomes2023intention,
-  title={Interaction-aware Maneuver Intention Prediction for Autonomous Vehicles using Interaction Graphs},
-  author={Gomes, Iago Pach{\^e}co and Wolf, Cristiano Premebida, Denis Fernando},
-  year={2023}
+@inproceedings{gomes2023interaction,
+  title={Interaction-aware Maneuver Prediction for Autonomous Vehicles using Interaction Graphs},
+  author={Gomes, Iago Pach{\^e}co and Premebida, Cristiano and Wolf, Denis Fernando},
+  booktitle={2023 IEEE Intelligent Vehicles Symposium (IV)},
+  pages={1--8},
+  year={2023},
+  organization={IEEE}
 }
+
 ```
 
 ## Usage
