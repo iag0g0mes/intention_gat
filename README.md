@@ -5,8 +5,6 @@ Created by Iago Pachêco Gomes at USP - ICMC, University of São Paulo - Institu
 
 **(published in 2023 IEEE Intelligent Vehicles Symposium (IV))**
 
-### **This repository will be updated by July 30th.**
-
 ## Introduction
 
 This repository contains the implementation of the models proposed and evaluated in the article "Interaction-aware Maneuver Intention Prediction for Autonomous Vehicles using Interaction Graphs". In addition, it also provides the lateral and longitudinal maneuver intention labels for the Argoverse v.1 validation dataset.
@@ -20,7 +18,9 @@ Intention prediction is an important task for an autonomous vehicle's perception
 
 ## System Architecture
 
+![Alt System Architecture](/image/model.png)
 
+This architecture relies on an encoder-decoder setup, where motion, road geometry, and interaction features are extracted from the interaction graph and a High-Definition Map (HD-Map). A Bidirectional-LSTM combines all features, and two decoders with Fully-Connected (FC) layers and Multi-Head Attention Mechanism (MHAM) estimate the lateral and longitudinal maneuver intentions. 
 
 ## License
 
@@ -28,11 +28,15 @@ Apache License 2.0
 
 ## Citation
 ``` 
-@article{gomes2023intention,
-  title={Interaction-aware Maneuver Intention Prediction for Autonomous Vehicles using Interaction Graphs},
-  author={Gomes, Iago Pach{\^e}co and Wolf, Cristiano Premebida, Denis Fernando},
-  year={2023}
+@inproceedings{gomes2023interaction,
+  title={Interaction-aware Maneuver Prediction for Autonomous Vehicles using Interaction Graphs},
+  author={Gomes, Iago Pach{\^e}co and Premebida, Cristiano and Wolf, Denis Fernando},
+  booktitle={2023 IEEE Intelligent Vehicles Symposium (IV)},
+  pages={1--8},
+  year={2023},
+  organization={IEEE}
 }
+
 ```
 
 ## Usage
@@ -47,6 +51,27 @@ Apache License 2.0
 ### Features
 
 #### Dataset
+##### Extract Features
+1) activate the environment and move to the feature folder
+   
+```shell
+conda activate argo
+cd features/argoverse
+```
+
+2) Modify the file cfg/features.ini according to instructions and the example
+3) You have to run this code one time for the validation dataset and another for the training dataset
+
+```python
+python argoverse_features.py --cfg cfg/features.ini
+```
+
+4) Modify the file cfg/split_dataset.ini according to instructions and the example
+5) Split the validation dataset into train_with_labels / validation / testing
+
+```python
+python split_features.py --cfg cfg/split_dataset.ini
+```
 
 
 ### Training and Testing
