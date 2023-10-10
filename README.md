@@ -66,8 +66,8 @@ cd features/argoverse
 python argoverse_features.py --cfg cfg/features.ini
 ```
 
-4) Split the validation dataset into train_with_labels / validation / testing
-4.1) Modify the file cfg/split_dataset.ini according to instructions and the example
+4) Modify the file cfg/split_dataset.ini according to instructions and the example
+5) Split the validation dataset into train_with_labels / validation / testing
 
 ```python
 python split_features.py --cfg cfg/split_dataset.ini
