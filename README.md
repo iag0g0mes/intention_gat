@@ -51,8 +51,12 @@ Apache License 2.0
 ### Features
 
 #### Dataset
+
+1) This project was evaluated in the Argoverse V.1. Motion Forecasting Dataset, available at https://www.argoverse.org/av1.html
+2) Follow the instructions in https://github.com/argoverse/argoverse-api to install the argoverse-api
+   
 ##### Extract Features
-1) activate the environment and move to the feature folder
+1) Activate the environment and move to the feature folder
    
 ```shell
 conda activate argo
