@@ -22,6 +22,8 @@ Intention prediction is an important task for an autonomous vehicle's perception
 
 This architecture relies on an encoder-decoder setup, where motion, road geometry, and interaction features are extracted from the interaction graph and a High-Definition Map (HD-Map). A Bidirectional-LSTM combines all features, and two decoders with Fully-Connected (FC) layers and Multi-Head Attention Mechanism (MHAM) estimate the lateral and longitudinal maneuver intentions. 
 
+To take advantage of unlabeled data, we employed the Noisy Student approach to estimate pseudo-labels for the training dataset. The results showed that a predictor (with only 2 seconds of obsevation) achieved similar performance than a classifier (which uses 5 seconds of observation - complete scene). 
+
 ## License
 
 Apache License 2.0
@@ -51,8 +53,12 @@ Apache License 2.0
 ### Features
 
 #### Dataset
+
+1) This project was evaluated in the Argoverse V.1. Motion Forecasting Dataset, available at https://www.argoverse.org/av1.html
+2) Follow the instructions in https://github.com/argoverse/argoverse-api to install the argoverse-api
+   
 ##### Extract Features
-1) activate the environment and move to the feature folder
+1) Activate the environment and move to the feature folder
    
 ```shell
 conda activate argo
