@@ -18,13 +18,13 @@ Intention prediction is an important task for an autonomous vehicle's perception
 
 ## System Architecture
 
-![Alt System Architecture](/image/model.png)
+![Alt System Architecture](/images/model.png)
 
 This architecture relies on an encoder-decoder setup, where motion, road geometry, and interaction features are extracted from the interaction graph and a High-Definition Map (HD-Map). A Bidirectional-LSTM combines all features, and two decoders with Fully-Connected (FC) layers and Multi-Head Attention Mechanism (MHAM) estimate the lateral and longitudinal maneuver intentions. 
 
 To take advantage of unlabeled data, we employed the Noisy Student approach to estimate pseudo-labels for the training dataset. The results showed that a predictor (with only 2 seconds of obsevation) achieved similar performance than a classifier (which uses 5 seconds of observation - complete scene). 
 
-![Alt System Architecture](/image/noisy.png)
+![alt Noisy Student|200](/images/noisy.png)
 
 ## License
 
