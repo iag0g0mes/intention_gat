@@ -24,7 +24,9 @@ This architecture relies on an encoder-decoder setup, where motion, road geometr
 
 To take advantage of unlabeled data, we employed the Noisy Student approach to estimate pseudo-labels for the training dataset. The results showed that a predictor (with only 2 seconds of obsevation) achieved similar performance than a classifier (which uses 5 seconds of observation - complete scene). 
 
-<img src="/images/noisy.png" width="700" alt="Noisy Student" style="float:right">
+<p align="center">
+<img src="/images/noisy.png" width="700" alt="Noisy Student">
+</p>
 
 ## License
 
