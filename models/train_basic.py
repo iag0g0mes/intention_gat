@@ -83,9 +83,9 @@ def load_kfold_data(
     x_val, y_val = None, None
 
     if test_rate > 0:
-        (x_train, y_train),\
-        (x_val, y_val),\
-        (_,_)=\
+        (x_train, y_train, _),\
+        (x_val, y_val, _),\
+        (_,_, _)=\
             split_data(x_train, y_train, test_rate=0.0, val_rate=test_rate)
     
     return (x_train, y_train),(x_val, y_val)
