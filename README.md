@@ -90,7 +90,10 @@ python split_features.py --cfg cfg/split_dataset.ini
 
 1) Move to the models folder
 2) Modify the file cfg/basic_model.ini
-3) Run train_basic.py
+   - mode [train] -> for training
+   - mode [test]  -> for testing:
+             when using test mode, set the variable weights_path in the .ini file to the folder with the model chekpoints        
+4) Run train_basic.py
    
 ```python
 python train_basic.py --cfg cfg/basic_model.ini
@@ -98,7 +101,15 @@ python train_basic.py --cfg cfg/basic_model.ini
 
 #### Noisy Student
 
+1) Move to the models folder
+2) Modify the file cfg/noisy_student.ini     
+4) Run train_noisy.py
+
 #### I-GAT Predictor
+
+1) Move to the models folder
+2) Modify the file cfg/intention.ini   
+4) Run train_intention.py
 
 ## Contact
 
