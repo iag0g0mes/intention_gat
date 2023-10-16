@@ -88,6 +88,14 @@ python split_features.py --cfg cfg/split_dataset.ini
 
 #### Baseline
 
+1) Move to the models folder
+2) Modify the file cfg/basic_model.ini
+3) Run train_basic.py
+   
+```python
+python train_basic.py --cfg cfg/basic_model.ini
+```
+
 #### Noisy Student
 
 #### I-GAT Predictor
