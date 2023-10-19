@@ -88,13 +88,24 @@ python split_features.py --cfg cfg/split_dataset.ini
 
 #### Baseline
 
+##### Training
+
 1) Move to the models folder
 2) Modify the file cfg/basic_model.ini
    - mode [train] -> for training
-   - mode [test]  -> for testing:
-             when using test mode, set the variable weights_path in the .ini file to the folder with the model chekpoints        
 4) Run train_basic.py
    
+```python
+python train_basic.py --cfg cfg/basic_model.ini
+```
+
+##### Testing
+1) Move to the models folder
+2) Modify the file cfg/basic_model.ini
+   - mode [test]
+   - weights_path: folder with the model checkpoints
+4) Run train_basic.py
+
 ```python
 python train_basic.py --cfg cfg/basic_model.ini
 ```
