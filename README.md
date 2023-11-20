@@ -125,7 +125,7 @@ python train_noisy.py --cfg cfg/noisy_student.ini
 4) To train more students, change the [STUDENT-DECODER] and [TEACHER-DECODER] in the .ini file
 - [STUDENT-DECODER]: new set of Fully Connected and Dropout layers
 - [TEACHER-DECODER]: parameters of the teacher model
-- [DIRS] <teacher_dir>: path to the teacher model checkpoint (<path to the checkpoint>/model)  
+- [DIRS] <teacher_dir>: path to the teacher model checkpoint (\<path to the checkpoint>/model)  
 
 ##### Test
 1) Move to the models folder
