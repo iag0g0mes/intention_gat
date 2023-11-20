@@ -148,3 +148,5 @@ features/argoverse/intention/images
 features/argoverse/data/val
 features/argoverse/data/train
 models/basic
+models/intention
+models/noisy
