@@ -115,9 +115,7 @@ python train_basic.py --cfg cfg/basic_model.ini
 ##### Train
 1) Move to the models folder
 2) Modify the file cfg/noisy_student.ini
-   
-2.1) Add the checkpoint folder of the teacher model to the attribute  <teacher_dir> in the .ini file  
-
+   - Add the checkpoint folder of the teacher model to the attribute  <teacher_dir> in the .ini file  
 3) Run train_noisy.py
 
 ```python
