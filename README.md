@@ -155,7 +155,7 @@ python train_intention.py --cfg cfg/intention.ini
 2) Modify the file cfg/intention.ini
    - mode [test]
    - weights_path: folder with the model checkpoints
-4) Run train_noisy.py
+4) Run train_intention.py
 
 ```python
 python train_intention.py --cfg cfg/intention.ini 
