@@ -88,17 +88,54 @@ python split_features.py --cfg cfg/split_dataset.ini
 
 #### Baseline
 
+##### Train
+
 1) Move to the models folder
 2) Modify the file cfg/basic_model.ini
-3) Run train_basic.py
+   - mode [train] -> for training
+4) Run train_basic.py
    
+```python
+python train_basic.py --cfg cfg/basic_model.ini
+```
+
+##### Test
+1) Move to the models folder
+2) Modify the file cfg/basic_model.ini
+   - mode [test]
+   - weights_path: folder with the model checkpoints
+4) Run train_basic.py
+
 ```python
 python train_basic.py --cfg cfg/basic_model.ini
 ```
 
 #### Noisy Student
 
+##### Train
+1) Move to the models folder
+2) Modify the file cfg/noisy_student.ini
+   - Add the checkpoint folder of the teacher model to the attribute  <teacher_dir> in the .ini file  
+3) Run train_noisy.py
+
+```python
+python train_noisy.py --cfg cfg/noisy_student.ini 
+```
+
+##### Test
+
 #### I-GAT Predictor
+
+##### Train
+1) Move to the models folder
+2) Modify the file cfg/intention.ini   
+4) Run train_intention.py
+
+```python
+python train_intention.py --cfg cfg/intention.ini 
+```
+   
+##### Test
 
 ## Contact
 
