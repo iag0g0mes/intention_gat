@@ -122,7 +122,21 @@ python train_basic.py --cfg cfg/basic_model.ini
 python train_noisy.py --cfg cfg/noisy_student.ini 
 ```
 
+4) To train more students, change the [STUDENT-DECODER] and [TEACHER-DECODER] in the .ini file
+- [STUDENT-DECODER]: new set of Fully Connected and Dropout layers
+- [TEACHER-DECODER]: parameters of the teacher model
+- [DIRS] <teacher_dir>: path to the teacher model checkpoint (<path>/model)  
+
 ##### Test
+1) Move to the models folder
+2) Modify the file cfg/noisy_student.ini
+   - mode [test]
+   - weights_path: folder with the model checkpoints
+4) Run train_noisy.py
+
+```python
+python train_noisy.py --cfg cfg/noisy_student.ini 
+```
 
 #### I-GAT Predictor
 
@@ -136,6 +150,16 @@ python train_intention.py --cfg cfg/intention.ini
 ```
    
 ##### Test
+
+1) Move to the models folder
+2) Modify the file cfg/intention.ini
+   - mode [test]
+   - weights_path: folder with the model checkpoints
+4) Run train_noisy.py
+
+```python
+python train_intention.py --cfg cfg/intention.ini 
+```
 
 ## Contact
 
