@@ -130,6 +130,10 @@ python train_noisy.py --cfg cfg/noisy_student.ini
 1) Move to the models folder
 2) Modify the file cfg/intention.ini   
 4) Run train_intention.py
+
+```python
+python train_intention.py --cfg cfg/intention.ini 
+```
    
 ##### Test
 
