@@ -147,3 +147,4 @@ features/argoverse/graphs
 features/argoverse/intention/images
 features/argoverse/data/val
 features/argoverse/data/train
+models/basic
